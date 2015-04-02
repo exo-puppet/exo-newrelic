@@ -20,7 +20,7 @@ define newrelic::java (
   $log_file_path = '',
   $user,
   $group,
-  $version       = '3.4.2',
+  $version       = '3.9.0',
   $license_key,) {
   # modules dependencies
   include wget
