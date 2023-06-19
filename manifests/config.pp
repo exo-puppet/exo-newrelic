@@ -5,7 +5,7 @@ class newrelic::config {
     owner   => 'root',
     group   => $newrelic::params::group,
     mode    => '0640',
-    require => Package [ 'newrelic-sysmond' ],
+    require => Package['newrelic-sysmond'],
     notify  => Service['newrelic'],
   }
 }
